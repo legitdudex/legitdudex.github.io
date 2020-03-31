@@ -7,7 +7,7 @@ $(document).ready(async function(){
   var text6 = "Here's how you can get to know me better...";
   var arr = [text1,text2,text3,text4,text5,text6];
   var sizeArr = [10,8,7,4,4,4];
-  var fontSizeArr = [7,6.5,5.8,3.9,3.9,3.9];
+  var fontSizeArr = [7,5.6,4.9,2.8,2.8,2.8];
   for(var i = 0; i < arr.length; i++){
     var map = populateBoxes(arr[i],sizeArr[i],fontSizeArr[i]);
     var time = calculateTime(map);
