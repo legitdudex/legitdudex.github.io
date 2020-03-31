@@ -73,7 +73,7 @@ function populateBoxes(text,size,fontSize){
     jQuery('<div/>', {
       id: 'row'+i
     }).appendTo('#intro');
-    $('#row'+i).css({"display":"flex","width":"100%","height":''+(100/map["size"]/2)+'%',"display":"inline-block","text-align":"center","justify-content":"center","align-items":"center","position":"relative"});
+    $('#row'+i).css({"margin":"0 auto","display":"flex","width":"100%","height":''+(100/map["size"]/2)+'%',"display":"inline-block","text-align":"center","justify-content":"center","align-items":"center","position":"relative"});
     for(var j = 0; j < map[i]["size"]; j++){
       jQuery('<span/>', {
         id: 'col'+i+''+j,
