@@ -6,14 +6,13 @@ $(document).ready(async function(){
   var text5 = "And I'm looking for new job opportunities!";
   var text6 = "Here's how you can get to know me better...";
   var arr = [text1,text2,text3,text4,text5,text6];
-  var time2 = 0;
+  var sizeArr = [10,8,7,4,4,4];
+  var fontSizeArr = [7,6,5.8,4,4,4];
   for(var i = 0; i < arr.length; i++){
-    var map = populateBoxes(arr[i]);
+    var map = populateBoxes(arr[i],sizeArr[i],fontSizeArr[i]);
     var time = calculateTime(map);
     randomizeBoxes(map);
-    time2+=time;
-    await sleep(time+1500);
-    time2+=1500;
+    await sleep(time+900);
     clearBoxes();
   }
 });
@@ -32,9 +31,9 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function populateBoxes(text){
+function populateBoxes(text,size,fontSize){
   var count = 0;
-  var totLength = parseInt(text.length/3);
+  var totLength = parseInt(text.length/2.2);
   text = text.split(" ");
   var arrangedText = []; // each element corresponds to the text per row
   var entry = ""; // to keep track of the text per row
@@ -70,21 +69,17 @@ function populateBoxes(text){
     }
   }
   var t = "";
-  var maxLength = 0;
-  for(var i = 0; i < map["size"]; i++){
-    if(map[i]["size"]>maxLength){maxLength = map[i]["size"];}
-  }
   for(var i = 0; i < map["size"]; i++){
     jQuery('<div/>', {
       id: 'row'+i
     }).appendTo('#intro');
-    $('#row'+i).css({"width":"100%","height":''+(100/map["size"])+'%',"display":"inline-block","text-align":"center","justify-content":"center","align-items":"center"});
+    $('#row'+i).css({"display":"flex","width":"100%","height":''+(100/map["size"]/2)+'%',"display":"inline-block","text-align":"center","justify-content":"center","align-items":"center","position":"relative"});
     for(var j = 0; j < map[i]["size"]; j++){
       jQuery('<span/>', {
         id: 'col'+i+''+j,
         text: map[i][j]
       }).appendTo('#row'+i);
-      $('#col'+i+''+j).css({"width":(100/maxLength)+'%',"opacity":"0","display":"inline-block","font-size":"5em"});
+      $('#col'+i+''+j).css({"width":size+'%',"opacity":"0","display":"inline-block","font-size":fontSize+"em"});
       t+= map[i][j];
     }
   }
