@@ -23,7 +23,7 @@ body{
 
 #choicesTable{
     display: none;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
