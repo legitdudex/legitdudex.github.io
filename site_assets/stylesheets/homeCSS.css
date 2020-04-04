@@ -12,7 +12,8 @@ body{
 
 #intro{
   width: 100%;
-  height: 100%;
+  height: 80%;
+  bottom: 20%;
   display: inline-block;
   text-align: center;
   align-items: center;
@@ -23,5 +24,4 @@ body{
 #choicesTable{
     display: none;
     width: 50%;
-    margin: 0 auto;
 }
