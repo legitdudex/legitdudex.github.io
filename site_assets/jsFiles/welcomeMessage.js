@@ -2,7 +2,7 @@ $(document).ready(async function(){
   var text1 = "Hello";
   var text2 = "My name is Doug!";
   var text3 = "Nice to meet you!";
-  var text4 = "I'm an aspiring software developer.";
+  var text4 = "I'm an aspiring software developer in New York.";
   var text5 = "And I'm looking for new job opportunities!";
   var text6 = "Here's how you can get to know me better...";
   var arr = [text1,text2,text3,text4,text5,text6];
