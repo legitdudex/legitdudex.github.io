@@ -50,6 +50,11 @@ function populateBoxes(text,size,fontSize){
         arrangedText.push(entry);
     }
   }
+  for(var i = 0; i < arrangedText.length; i++){
+    if(arrangedText[i].charAt(arrangedText[i].length-1) == ' '){
+      arrangedText[i] = arrangedText[i].slice(0,-1);
+    }
+  }
   console.log(arrangedText);
   var map = {};
   map["size"] = arrangedText.length+2;
