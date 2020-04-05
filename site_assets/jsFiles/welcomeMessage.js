@@ -8,11 +8,12 @@ $(document).ready(async function(){
   var arr = [text1,text2,text3,text4,text5,text6];
   var sizeArr = [10,8,7,4,4,4];
   var fontSizeArr = [7,6,5,3.5,3.5,3.5];
-  for(var i = 0; i < arr.length; i++){
+  var waitTimes = [1300,1300,1400,1400,1400,1400];
+for(var i = 0; i < arr.length; i++){
     var map = populateBoxes(arr[i],sizeArr[i],fontSizeArr[i]);
     var time = calculateTime(map);
     randomizeBoxes(map);
-    await sleep(time+900);
+    await sleep(time+waitTimes[i]);
     clearBoxes();
   }
 });
@@ -21,7 +22,7 @@ function calculateTime(map){
   var time = 0;
   for(var i = 0; i < map["size"]; i++){
     for(var j = 0; j < map[i]["size"]; j++){
-      time+=100;
+      if(map[i][j]!="none"){time+=100;}
     }
   }
   return time;
@@ -109,8 +110,10 @@ function randomizeBoxes(map){
   for(var i = 0; i < map["size"]; i++){
     $('#row'+i).css({'margin-top':'5%'});
     for(var j = 0; j < map[i]["size"]; j++){
-      setTimeout(lightElement,time,map,colors,colorIndex,i,j);
-      time+=100;
+      if(map[i][j]!="none"){
+        setTimeout(lightElement,time,map,colors,colorIndex,i,j);
+        time+=100;
+      }
       colorIndex++;
       if(colorIndex >= colors.length){colorIndex = 0;}
     }
