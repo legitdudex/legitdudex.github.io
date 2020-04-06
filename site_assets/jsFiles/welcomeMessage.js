@@ -98,7 +98,7 @@ function clearBoxes(){
 
 function lightElement(map,colors,colorIndex,i,j){
   if(map[i][j]!="none" && map[i][j]!=" "){
-    $('#col'+i+''+j).css({'box-shadow':'0px 4px 13px 3px '+colors[colorIndex],'opacity':'100','color':'white','background-color':''+colors[colorIndex]});
+    $('#col'+i+''+j).css({'box-shadow':'0px 4px 13px 2px '+colors[colorIndex],'opacity':'100','color':'white','background-color':''+colors[colorIndex]});
   }
   else if(map[i][j]==="none"){
     $('#col'+i+''+j).css({'opacity':'0'});
