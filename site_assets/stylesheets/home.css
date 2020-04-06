@@ -11,8 +11,8 @@ body{
 }
 
 #intro{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: inline-block;
   text-align: center;
   align-items: center;
@@ -23,7 +23,7 @@ body{
 
 #choicesTable{
   display: none;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
