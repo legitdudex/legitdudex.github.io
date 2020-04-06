@@ -14,7 +14,7 @@ for(var i = 0; i < arr.length; i++){
     var time = calculateTime(map);
     randomizeBoxes(map);
     await sleep(time+waitTimes[i]);
-    clearBoxes();
+    if(i!=arr.length){clearBoxes();}
   }
 });
 
