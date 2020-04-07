@@ -43,7 +43,7 @@ body{
 
 #choicesTable span{
     font-family: sans-serif;
-    color: white;
+    color: #eeebe8;
     font-weight: 300;
     font-size: 1.775vw;
     width: 10vw;
@@ -56,7 +56,7 @@ body{
     justify-content: flex-end
 }
 #buttonContainer button{
-    color: white;
+    color: #eeebe8;
     background-color: #1b1b1b;
     font-family: sans-serif;
     font-weight: 300;
