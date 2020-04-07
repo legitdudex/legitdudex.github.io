@@ -46,6 +46,7 @@ body{
 #choicesTable p{
     color: white;
     width: 10vw;
+    text-transform: uppercase;
 }
 
 #buttonContainer{
