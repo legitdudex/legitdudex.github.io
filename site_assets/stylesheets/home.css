@@ -9,8 +9,6 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Oswald',sans-serif;
-    font-size: 1.875vw;
-    font-weight: 300;
 }
 
 #intro{
@@ -41,6 +39,8 @@ body{
     border: 0;
     vertical-align: middle;
     box-sizing: border-box;
+    font-size: 1.875vw;
+    font-weight: 300;
 }
 
 #choicesTable p{
