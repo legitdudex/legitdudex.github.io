@@ -47,12 +47,12 @@ body{
     color: #eeebe8;
     font-weight: 300;
     font-size: 1.775vw;
-    width: 10vw;
+    width: 18vw;
     text-transform: uppercase;
 }
 
 #buttonContainer{
-    width: 80vw;
+    width: 79vw;
     display: flex;
     justify-content: flex-end
 }
