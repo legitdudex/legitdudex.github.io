@@ -16,17 +16,23 @@ body{
 }
 #intro_container{
     margin-top: 5%;
-    width: 100vw;
+    width: 90vw;
     height: 10vh;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 #home_button{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 #doug_cho{
-    content: "Doug Cho";
     color: #eeebe8;
+    background-color: #0e0e0e;
     font-weight: 300;
     font-size: 1.775vw;
     text-transform: uppercase;
@@ -34,7 +40,11 @@ body{
 }
 #button_container{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 #button_container button{
     color: #eeebe8;
