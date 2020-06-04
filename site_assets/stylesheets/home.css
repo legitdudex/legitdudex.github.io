@@ -15,8 +15,8 @@ body{
     font-family: 'Oswald',sans-serif;
 }
 #intro_container{
-    margin-top: 5%;
-    width: 90vw;
+    margin-top: 2%;
+    width: 95vw;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ body{
     align-items: center;
     align-content: center;
 }
-#doug_cho{
+#home_button span{
     color: #eeebe8;
     background-color: #0e0e0e;
     font-weight: 300;
