@@ -39,6 +39,9 @@ body{
     vertical-align: middle;
     box-sizing: border-box;
     font-size: 1.875vw;
+    animation-name: slide_down_nav_bar;
+    animation-duration: 2s;
+    animation-timing-function: ease;
 }
 
 #choicesTable span{
@@ -66,3 +69,17 @@ body{
     cursor: pointer;
 }
 
+
+
+/*
+ * Animations will be defined here
+ * */
+
+@keyframes slide_down_nav_bar{
+    from{
+        margin-top:-20vh;
+    }
+    to{
+        margin-top: 0;
+    }
+}
