@@ -76,10 +76,8 @@ body{
  * */
 
 @keyframes slide_down_nav_bar{
-    from{
-        margin-top:-20vh;
-    }
-    to{
-        margin-top: 0.5vh;
-    }
+    0%{margin-top:-20vh;}
+    25%{margin-top: 0;}
+    50%{margin-top: 5vh;}
+    100%{margin-top: 0.5vh}
 }
