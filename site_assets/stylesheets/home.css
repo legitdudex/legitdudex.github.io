@@ -26,6 +26,8 @@ body{
     vertical-align: middle;
     box-sizing: border-box;
     font-size: 1.875vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
 }
 #home_button{
     display: flex;
