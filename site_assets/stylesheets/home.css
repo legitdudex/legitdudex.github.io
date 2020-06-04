@@ -16,12 +16,16 @@ body{
 }
 #intro_container{
     margin-top: 2%;
-    width: 95vw;
-    height: 10vh;
+    width: 100vw;
+    height: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-size: 1.875vw;
 }
 #home_button{
     display: flex;
