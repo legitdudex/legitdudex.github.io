@@ -43,12 +43,3 @@ body{
     font-weight: 300;
     font-size: 1.875vw;
 }
-#about_me{
-    content: "About Me";
-}
-#work_experience{
-    content: "My Experience";
-}
-#personal_projects{
-    content: "Projects";
-}
