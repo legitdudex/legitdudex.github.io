@@ -1,66 +1,54 @@
 /*This is the style sheet used for the home page*/
+html{
+    width: 100%;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 body{
     background-color: #0e0e0e;
     width: 100%;
-    height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    overflow-y: hidden;
     font-family: 'Oswald',sans-serif;
 }
-
-#intro{
-    width: 100vw;
-    height: 100vh;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+#intro_container{
     margin-top: 5%;
-}
-
-#choicesTable{
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
     width: 100vw;
-    height: 50px;
-    margin: 0;
-    border: 0;
-    vertical-align: middle;
-    box-sizing: border-box;
-    font-size: 1.875vw;
-}
+    height: 10vh;
 
-#choicesTable span{
-    font-family: sans-serif;
+}
+#home_button{
+    display: flex;
+    justify-content: flex-start;
+}
+#doug_cho{
+    content: "Doug Cho";
     color: #eeebe8;
     font-weight: 300;
     font-size: 1.775vw;
-    width: 18vw;
     text-transform: uppercase;
+    font-family: sans-serif;
 }
-
-#buttonContainer{
-    width: 79vw;
+#button_container{
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
-#buttonContainer button{
+#button_container button{
     color: #eeebe8;
     background-color: #0e0e0e;
     font-family: sans-serif;
     font-weight: 300;
     font-size: 1.875vw;
-    margin-right: 3vw
 }
-
+#about_me{
+    content: "About Me";
+}
+#work_experience{
+    content: "My Experience";
+}
+#personal_projects{
+    content: "Projects";
+}
