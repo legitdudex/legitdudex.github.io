@@ -92,17 +92,24 @@ body{
     width: 30%;
     height: 20%;
     text-align: center;
+    margin-left: 15%;
 }
 #intro_text_2 span{
     color: #eeebe8;
+    font-size: 5.875vw;
+    font-weight: 1000;
 }
 #intro_text_3{
     width 40%;
     height: 30%;
     text-align: center;
+    margin-top: 10%;
+    margin-left: 30%;
 }
 #intro_text_3 span{
     color: #eeebe8;
+    font-size: 6vw;
+    font-weight: 2000;
 }
 
 /*
