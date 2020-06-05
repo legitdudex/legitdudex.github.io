@@ -78,6 +78,6 @@ body{
 
 @keyframes slide_down_nav_bar{
     0%{margin-top:-5vh;}
-    50%{margin-top: 0.2vh;}
+    50%{margin-top: 0.4vh;}
     100%{margin-top: 0.1vh}
 }
