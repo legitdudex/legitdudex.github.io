@@ -85,6 +85,8 @@ body{
 }
 #intro_text_1 span{
     color: #eeebe8;
+    font-size: 3.875vw;
+    font-weight: 700;
 }
 #intro_text_2{
     width: 30%;
