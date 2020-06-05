@@ -78,6 +78,14 @@ body{
 
 @keyframes slide_down_nav_bar{
     0%{margin-top:-5vh;}
-    50%{margin-top: 0.4vh;}
+    70%{margin-top: 0.4vh;}
     100%{margin-top: 0.1vh}
+}
+@keyframes about_me_hover{
+    
+}
+@keyframes work_experience_hover{
+}
+@keyframes personal_projects_hover{
+
 }
